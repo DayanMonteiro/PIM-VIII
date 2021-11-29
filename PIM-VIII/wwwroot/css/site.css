@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 
@@ -24,8 +24,8 @@ form {
 }
 
 h1 {
-    margin-top: 2rem;
-    margin-bottom: -20px;
+    margin-top: 0.2rem;
+    margin-bottom: -15px;
 }
 
 #container {
@@ -39,7 +39,8 @@ h1 {
 .contentInit {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    align-items: flex-start;
+    margin-top: 0.5rem;
     margin-left: -8rem;
     line-height: 2.5rem;
     margin-left: -10px;
@@ -54,20 +55,26 @@ h1 {
     }
 
 .fone input {
-    width: 8rem;
+    width: 9rem;
+}
+
+
+.fone input :last-child {
+    margin-left: 5px;
 }
 
 .address {
     height: 70rem;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    align-items: center;
+    margin-left: -6rem;
     line-height: 2.5rem;
 }
 
 h3 {
     margin-top: 1rem;
-    margin-left: -18rem;
+
     margin-bottom: 0.5rem;
 }
 
@@ -81,6 +88,7 @@ h3 {
 
 .residenceNumber {
     width: 5rem;
+    margin-right: 14rem;
 }
 
 .complement {
@@ -89,6 +97,7 @@ h3 {
 
 .cep {
     width: 7rem;
+    margin-right: 14rem;
 }
 
 .city {
@@ -104,10 +113,10 @@ input {
 
 button {
     margin-top: 1rem;
-    width: 200px;
+    width: 100px;
     height: 30px;
     border-radius: 5px;
-    background-color: #635e5d;
+    background-color: #0d6efd;
     color: #ffffff;
     cursor: pointer;
     transition: filter 0.3s;
@@ -118,4 +127,11 @@ button {
         filter: brightness(0.9);
         background-color: #ffffff;
         color: #635e5d;
+    }
+
+    .enviar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
     }
